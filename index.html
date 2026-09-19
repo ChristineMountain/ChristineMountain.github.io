@@ -6,10 +6,51 @@
 <title>Christine Le</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Caveat:wght@500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+<!-- reusable little doodles -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="doodle-flower" viewBox="0 0 40 40">
+      <g fill="none" stroke="currentColor" stroke-width="1.6">
+        <circle cx="20" cy="12" r="6.2"/>
+        <circle cx="20" cy="28" r="6.2"/>
+        <circle cx="12" cy="20" r="6.2"/>
+        <circle cx="28" cy="20" r="6.2"/>
+        <circle cx="20" cy="20" r="3.4" fill="currentColor" stroke="none"/>
+      </g>
+    </symbol>
+    <symbol id="doodle-sparkle" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 0c1 8 3 11 12 12-9 1-11 4-12 12-1-8-3-11-12-12 9-1 11-4 12-12Z"/>
+    </symbol>
+    <symbol id="doodle-butterfly" viewBox="0 0 40 30">
+      <path fill="currentColor" d="M20 15C14 2 2 2 4 12c2 8 12 6 16 3 4 3 14 5 16-3 2-10-10-10-16 3Z"/>
+      <line x1="20" y1="10" x2="20" y2="24" stroke="currentColor" stroke-width="1.4"/>
+    </symbol>
+    <symbol id="doodle-leaf" viewBox="0 0 40 40">
+      <path fill="currentColor" d="M8 32C6 18 16 6 32 6c2 16-10 26-24 26Z"/>
+      <path d="M10 30C16 22 22 16 30 9" fill="none" stroke="var(--paper)" stroke-width="1.4"/>
+    </symbol>
+    <symbol id="doodle-star" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 2l2.6 6.6L21 11l-6.4 2.4L12 20l-2.6-6.6L3 11l6.4-2.4L12 2Z"/>
+    </symbol>
+    <symbol id="doodle-heart" viewBox="0 0 32 28">
+      <path fill="currentColor" d="M16 27C4 19 0 12 0 7.5 0 3 3.4 0 7.5 0 11 0 14 2 16 5c2-3 5-5 8.5-5C28.6 0 32 3 32 7.5 32 12 28 19 16 27Z"/>
+    </symbol>
+    <symbol id="sprig" viewBox="0 0 100 100">
+      <path d="M12 92C34 70 44 48 58 16" fill="none" stroke="#8fa17f" stroke-width="2.6" stroke-linecap="round"/>
+      <ellipse cx="33" cy="66" rx="11" ry="5.4" fill="#a8b89a" transform="rotate(-40 33 66)"/>
+      <ellipse cx="45" cy="49" rx="9.5" ry="4.6" fill="#a8b89a" transform="rotate(-25 45 49)"/>
+      <ellipse cx="52" cy="32" rx="8.5" ry="4.2" fill="#8fa17f" transform="rotate(-10 52 32)"/>
+      <circle cx="60" cy="16" r="6" fill="#e8b4bc"/>
+      <circle cx="66" cy="11" r="4" fill="#d891a0"/>
+      <circle cx="55" cy="9" r="3.4" fill="#edc9d6"/>
+    </symbol>
+  </defs>
+</svg>
 
 <header class="site-header">
   <div class="container header-inner">
@@ -21,7 +62,6 @@
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
       <a href="#leadership">Leadership</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -31,38 +71,45 @@
 <main>
 
   <section id="top" class="hero">
+    <span class="doodle doodle-sparkle hero-sparkle-1"><svg><use href="#doodle-sparkle"/></svg></span>
+    <span class="doodle doodle-sparkle hero-sparkle-2"><svg><use href="#doodle-sparkle"/></svg></span>
+    <span class="doodle doodle-flower hero-flower"><svg><use href="#doodle-flower"/></svg></span>
     <div class="container hero-inner">
-      <div class="hero-text">
+      <div class="hero-text reveal">
+        <p class="handwritten">welcome to my personal website</p>
         <p class="eyebrow">Tucson, Arizona</p>
-        <h1>Hi, I'm Christine.</h1>
-        <p class="hero-sub">Computer Science &amp; Data Science student, full-stack developer, and researcher who loves turning messy data and half-finished ideas into things that work.</p>
+        <h1>Hi, I'm <span class="script-name">Christine</span></h1>
+        <p class="hero-sub">Student, developer, and researcher with a love for learning, meaningful projects, and discovering something new every day.</p>
         <div class="hero-links">
-          <a class="btn btn-primary" href="mailto:christine.mt.le@gmail.com">Say hello</a>
+          <a class="btn btn-primary" href="https://mail.google.com/mail/?view=cm&fs=1&to=christine.mt.le@gmail.com" target="_blank" rel="noopener">Contact</a>
           <a class="btn btn-outline" href="https://www.linkedin.com/in/christine-mt-le/" target="_blank" rel="noopener">LinkedIn</a>
           <a class="btn btn-outline" href="https://github.com/ChristineMountain" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
-      <div class="hero-photo">
+      <div class="hero-photo reveal">
+        <span class="tape tape-lavender"></span>
         <div class="photo-frame">
-          <img src="images/profile.jpg" alt="Christine Le" onerror="this.style.display='none'; this.parentElement.classList.add('no-photo');">
+          <img src="images/profile.png" alt="Christine Le" onerror="this.style.display='none'; this.parentElement.classList.add('no-photo');">
           <span class="monogram">CL</span>
         </div>
-        <p class="photo-hint">Drop a photo in <code>images/profile.jpg</code> to replace this placeholder.</p>
+        <svg class="hero-sprig"><use href="#sprig"/></svg>
+        <p class="photo-caption">est. Tucson, AZ 🌵</p>
       </div>
     </div>
   </section>
 
-  <section id="about" class="section">
+  <section id="about" class="section reveal">
     <div class="container">
-      <h2><span class="section-number">01</span> About</h2>
+      <p class="handwritten kicker">a little about me</p>
+      <h2><span class="doodle-inline"><svg><use href="#doodle-flower"/></svg></span> About</h2>
       <div class="about-grid">
         <p class="about-text">
-          I'm a double major in Computer Science and Data Science at the University of Arizona's W.A. Franke Honors College, graduating in 2028 with a 4.0 GPA.
-          I currently work as a full-stack developer on a university advising platform, do image-processing research for NASA Space Grant at Kitt Peak National Observatory,
-          and mentor Calculus II students on the side. Outside of coursework and work, I like digging into datasets, building small simulations, and finding ways to get
-          more students excited about computer science.
+          I'm a Computer Science and Data Science double major in the University of Arizona's W.A. Franke Honors College, graduating in 2028.
+          I spend my time working in full-stack development, conducting image-processing research through NASA Space Grant at Kitt Peak National Observatory, and mentoring
+          Calculus II students. I also love exploring datasets, building small simulations, and helping more people get excited about computer science.
         </p>
-        <div class="education-card">
+        <div class="note-card education-card">
+          <span class="tape tape-sage"></span>
           <h3>Education</h3>
           <p class="edu-school">The University of Arizona</p>
           <p class="edu-degree">B.S. Computer Science &amp; Data Science (Double Major)</p>
@@ -77,9 +124,10 @@
     </div>
   </section>
 
-  <section id="experience" class="section section-alt">
+  <section id="experience" class="section section-alt reveal">
     <div class="container">
-      <h2><span class="section-number">02</span> Experience</h2>
+      <p class="handwritten kicker">what I've been up to</p>
+      <h2><span class="doodle-inline"><svg><use href="#doodle-sparkle"/></svg></span> Experience</h2>
       <div class="timeline">
 
         <div class="timeline-item">
@@ -145,19 +193,22 @@
     </div>
   </section>
 
-  <section id="projects" class="section">
+  <section id="projects" class="section reveal">
     <div class="container">
-      <h2><span class="section-number">03</span> Projects</h2>
+      <p class="handwritten kicker">some things I did</p>
+      <h2><span class="doodle-inline"><svg><use href="#doodle-butterfly"/></svg></span> Projects</h2>
       <div class="card-grid">
 
-        <div class="card">
+        <div class="note-card card">
+          <span class="tape tape-pink"></span>
           <p class="card-tag">SQL &middot; DuckDB &middot; Python</p>
           <h3>ASA DataFest ASU/UA</h3>
           <p class="card-badge">🏆 Best Insights Winner, Spring 2026</p>
           <p>Analyzed multi-million-row datasets under a 48-hour constraint using SQL/DuckDB, Python, and structured data exploration. Extracted actionable insights using machine learning and presented findings to industry professionals and statisticians.</p>
         </div>
 
-        <div class="card">
+        <div class="note-card card">
+          <span class="tape tape-lavender"></span>
           <p class="card-tag">Python &middot; Simulation</p>
           <h3>Battleship Neuroevolution</h3>
           <p class="card-badge">🎤 SUnMaRC Presenter, Spring 2026</p>
@@ -168,71 +219,39 @@
     </div>
   </section>
 
-  <section id="skills" class="section section-alt">
+  <section id="leadership" class="section section-alt reveal">
     <div class="container">
-      <h2><span class="section-number">04</span> Skills</h2>
-      <div class="skills-grid">
-        <div>
-          <h3>Languages &amp; Frameworks</h3>
-          <div class="pill-list">
-            <span class="pill">Python</span>
-            <span class="pill">C#</span>
-            <span class="pill">Java</span>
-            <span class="pill">SQL</span>
-            <span class="pill">JavaScript</span>
-            <span class="pill">HTML</span>
-            <span class="pill">ASP.NET MVC/Core</span>
-            <span class="pill">.NET</span>
-            <span class="pill">Entity Framework</span>
-          </div>
-        </div>
-        <div>
-          <h3>Tools &amp; Concepts</h3>
-          <div class="pill-list">
-            <span class="pill">Git</span>
-            <span class="pill">Linux</span>
-            <span class="pill">Visual Studio</span>
-            <span class="pill">VS Code</span>
-            <span class="pill">Jira</span>
-            <span class="pill">DuckDB</span>
-            <span class="pill">SQL Server</span>
-            <span class="pill">Full-Stack Development</span>
-            <span class="pill">Database-Backed Web Apps</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="leadership" class="section">
-    <div class="container">
-      <h2><span class="section-number">05</span> Leadership</h2>
+      <p class="handwritten kicker">leading with heart</p>
+      <h2><span class="doodle-inline"><svg><use href="#doodle-star"/></svg></span> Leadership</h2>
       <div class="card-grid">
 
-        <div class="card">
+        <div class="note-card card">
+          <span class="tape tape-sage"></span>
           <p class="card-tag">2024 – 2025</p>
           <h3>Project Manager</h3>
           <p class="card-badge">Raspberry Pi Java Game Project &middot; Tucson, AZ</p>
           <p>Led team workflow for a Java-based Raspberry Pi game project, using Jira to organize tasks, track progress, and coordinate development milestones.</p>
         </div>
 
-        <div class="card">
+        <div class="note-card card">
+          <span class="tape tape-pink"></span>
           <p class="card-tag">2023 – 2025</p>
           <h3>Community STEM &amp; CS Outreach</h3>
           <p class="card-badge">Tucson, AZ</p>
-          <p>Advocated to school administration for a computer science program at Tanque Verde High School, helping expand student access to programming education, and helped establish a Robotics Club for hands-on coding, engineering, and problem-solving.</p>
+          <p>Advocated to school administration for a computer science program at Tanque Verde High School, helping expand student access to programming education. Helped establish a Robotics Club, taught chemistry at science events, co-created a women-in-STEM event, and volunteered in literacy and food-bank service.</p>
         </div>
 
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section section-alt contact-section">
+  <section id="contact" class="section contact-section reveal">
+    <span class="doodle doodle-heart contact-heart"><svg><use href="#doodle-heart"/></svg></span>
     <div class="container">
-      <h2><span class="section-number">06</span> Let's connect</h2>
-      <p class="contact-sub">Always happy to talk about data, software, or the next project idea.</p>
+      <p class="handwritten kicker">say hello</p>
+      <h2>Contact</h2>
       <div class="hero-links">
-        <a class="btn btn-primary" href="mailto:christine.mt.le@gmail.com">christine.mt.le@gmail.com</a>
+        <a class="btn btn-primary" href="https://mail.google.com/mail/?view=cm&fs=1&to=christine.mt.le@gmail.com" target="_blank" rel="noopener">christine.mt.le@gmail.com</a>
         <a class="btn btn-outline" href="tel:5207806051">(520) 780-6051</a>
         <a class="btn btn-outline" href="https://www.linkedin.com/in/christine-mt-le/" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn btn-outline" href="https://github.com/ChristineMountain" target="_blank" rel="noopener">GitHub</a>
@@ -243,7 +262,7 @@
 </main>
 
 <footer class="site-footer">
-  <p>&copy; <span id="year"></span> Christine Le. Built with care in Tucson, AZ.</p>
+  <p>&copy; <span id="year"></span> Christine Le</p>
 </footer>
 
 <script src="script.js"></script>
