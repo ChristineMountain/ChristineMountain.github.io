@@ -81,7 +81,7 @@
         <h1>Hi, I'm <span class="script-name">Christine</span></h1>
         <p class="hero-sub">Student, developer, and researcher with a love for learning, meaningful projects, and discovering something new every day.</p>
         <div class="hero-links">
-          <a class="btn btn-primary" href="#contact">Contact</a>
+          <a class="btn btn-primary" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
           <a class="btn btn-outline" href="https://www.linkedin.com/in/christine-mt-le/" target="_blank" rel="noopener">LinkedIn</a>
           <a class="btn btn-outline" href="https://github.com/ChristineMountain" target="_blank" rel="noopener">GitHub</a>
         </div>
@@ -128,6 +128,14 @@
     <div class="container">
       <p class="handwritten kicker">what I've been up to</p>
       <h2><span class="doodle-inline"><svg><use href="#doodle-sparkle"/></svg></span> Experience</h2>
+
+      <div class="note-card spotlight-card">
+        <span class="tape tape-sage"></span>
+        <p class="card-tag">NASA Space Grant &middot; Kitt Peak National Observatory</p>
+        <h3>High-Speed Astronomical CMOS Imaging</h3>
+        <p>I help build and improve the data-processing and storage pipeline for a high-speed CMOS camera used in astronomical research at Kitt Peak National Observatory &mdash; a system that generates roughly <strong>20 TB of data per 10-day observing run</strong>. My work focuses on making that pipeline more efficient with Python-based tools for image analysis, so the data is easier to process, move, and store while supporting real telescope observations.</p>
+      </div>
+
       <div class="timeline">
 
         <div class="timeline-item">
@@ -139,18 +147,6 @@
               <li>Maintain and improve eSMS, a multi-project advising and career-services platform with role-based Student, Admin, Employer, Events, Admissions, Mobile API, and background-job applications.</li>
               <li>Develop across a hybrid ASP.NET MVC/Core codebase using C#, JavaScript, HTML, SQL Server, and Entity Framework, supporting legacy .NET Framework systems and migration to modern .NET.</li>
               <li>Debug production issues involving live data and active users; implement user-facing and administrative features through layered controller, service, repository, model, and ViewModel architecture.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-date">Aug 2026 – Present</div>
-          <div class="timeline-content">
-            <h3>Undergraduate Researcher</h3>
-            <p class="timeline-org">NASA Space Grant &middot; Tucson, AZ</p>
-            <ul>
-              <li>Lead technical efforts to improve data-processing and storage workflows for a high-speed CMOS astronomical imager generating ~20 TB per 10-day observing run.</li>
-              <li>Develop Python-based tools for image analysis and data processing while supporting observations at Kitt Peak National Observatory.</li>
             </ul>
           </div>
         </div>
@@ -197,22 +193,44 @@
     <div class="container">
       <p class="handwritten kicker">some things I did</p>
       <h2><span class="doodle-inline"><svg><use href="#doodle-butterfly"/></svg></span> Projects</h2>
-      <div class="card-grid">
+      <div class="card-grid project-grid">
 
-        <div class="note-card card">
+        <div class="note-card card project-card">
           <span class="tape tape-pink"></span>
-          <p class="card-tag">SQL &middot; DuckDB &middot; Python</p>
+          <div class="project-photo">
+            <img src="images/datafest-team.png" alt="Team 2 (Machine Learning Learning Machines) presenting their DataFest project at whiteboards">
+          </div>
+          <p class="project-ribbon">🏆 Best Insights — ASA DataFest 2026</p>
           <h3>ASA DataFest ASU/University of Arizona</h3>
-          <p class="card-badge">🏆 Best Insights Winner, Spring 2026</p>
-          <p>Analyzed multi-million-row datasets under a 48-hour constraint using SQL/DuckDB, Python, and structured data exploration. Extracted actionable insights using machine learning and presented findings to industry professionals and statisticians.</p>
+          <div class="pill-list">
+            <span class="pill">Python</span>
+            <span class="pill">SQL</span>
+            <span class="pill">DuckDB</span>
+            <span class="pill">Excel</span>
+            <span class="pill">Machine Learning</span>
+            <span class="pill">Visualization</span>
+          </div>
+          <p class="card-desc">Under a 48-hour deadline, our team (Machine Learning Learning Machines) analyzed a multi-million-row healthcare dataset to find where access to care breaks down. We modeled how patient visits fall off with distance from the hospital (about a 2% drop per mile within ~21 miles) to help pinpoint where new clinics would have the biggest impact, and found that patients with chronic conditions who used the MyChart portal averaged roughly 12 more visits over four years. Presenting those findings to industry professionals and statisticians earned us Best Insights among competing teams.</p>
         </div>
 
-        <div class="note-card card">
+        <div class="note-card card project-card">
           <span class="tape tape-lavender"></span>
-          <p class="card-tag">Python &middot; Simulation</p>
+          <div class="project-photo">
+            <img src="images/sunmarc-presentation.png" alt="Christine presenting the Battleship neuroevolution project at SUnMaRC">
+          </div>
+          <p class="project-ribbon">🎤 SUnMaRC Presenter, Spring 2026</p>
           <h3>Battleship Neuroevolution</h3>
-          <p class="card-badge">🎤 SUnMaRC Presenter, Spring 2026</p>
-          <p>Designed and implemented a neuroevolution-based neural network to optimize Battleship offense strategies through large-scale simulation. Presented the research at SUnMaRC as the University of Arizona's only female student presenter.</p>
+          <div class="pill-list">
+            <span class="pill">Python</span>
+            <span class="pill">Neural Networks</span>
+            <span class="pill">Neuroevolution</span>
+            <span class="pill">Simulation</span>
+          </div>
+          <p class="card-desc">With Brendan Phoebe, I built a neural network that learns where to shoot next on a 10&times;10 Battleship board, trained through neuroevolution instead of traditional backpropagation: each generation of candidate networks played many simulated games, and the strongest performers passed their weights (with small mutations) on to the next generation. Each board cell was scored using 20 engineered features &mdash; hit/miss history, remaining ship-length probabilities, board position, and more. Across 30 generations of training, the resulting network averaged <strong>45.5 moves per win</strong>, far better than random play (97) or hit-chasing (67), and close to the theoretical probabilistic-search optimum (42) &mdash; while running orders of magnitude faster. I presented this research at SUnMaRC as the University of Arizona's only female student presenter.</p>
+          <div class="project-visual-slot">
+            <p class="handwritten">more visuals coming soon</p>
+            <p class="visual-slot-caption">(training charts &amp; game replays)</p>
+          </div>
         </div>
 
       </div>
@@ -253,15 +271,14 @@
       <div class="contact-emails">
         <div class="contact-email-row">
           <span class="handwritten">Personal:</span>
-          <a class="btn btn-outline" href="https://mail.google.com/mail/?view=cm&fs=1&to=christine.mt.le@gmail.com" target="_blank" rel="noopener">christine.mt.le@gmail.com</a>
+          <a class="btn btn-outline" href="mailto:christine.mt.le@gmail.com">christine.mt.le@gmail.com</a>
         </div>
         <div class="contact-email-row">
           <span class="handwritten">UA email:</span>
-          <a class="btn btn-outline" href="https://mail.google.com/mail/?view=cm&fs=1&to=christinele@arizona.edu" target="_blank" rel="noopener">christinele@arizona.edu</a>
+          <a class="btn btn-outline" href="mailto:christinele@arizona.edu">christinele@arizona.edu</a>
         </div>
       </div>
       <div class="hero-links">
-        <a class="btn btn-outline" href="tel:5207806051">(520) 780-6051</a>
         <a class="btn btn-outline" href="https://www.linkedin.com/in/christine-mt-le/" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn btn-outline" href="https://github.com/ChristineMountain" target="_blank" rel="noopener">GitHub</a>
       </div>
