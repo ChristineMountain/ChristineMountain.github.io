@@ -327,10 +327,10 @@ a { color: inherit; text-decoration: none; }
 
 .education-card {
   flex: 0 1 320px;
-  transform: rotate(1.5deg);
+  transform: rotate(2.5deg);
   transition: transform 0.2s ease;
 }
-.education-card:hover { transform: translateY(-4px) rotate(0deg); }
+.education-card:hover { transform: translateY(-6px) rotate(0deg); }
 
 .edu-school { font-weight: 700; margin: 0 0 4px; color: var(--ink); }
 .edu-degree { color: var(--ink-soft); margin: 0 0 4px; }
