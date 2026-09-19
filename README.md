@@ -1,10 +1,11 @@
 # Personal Website
 
-My personal portfolio website for showcasing my projects, experience, research, and interests.
+My personal website: https://christinemountain.github.io
 
 ## About
 
-I’m Christine Le, a Computer Science and Data Science student at the University of Arizona. This site is a place to bring together everything I am up to.
+I’m Christine Le, a Computer Science and Data Science student at the University of Arizona. This site is a place to bring together everything I’m currently working on.
+
 ## Features
 
 - About me
@@ -13,3 +14,7 @@ I’m Christine Le, a Computer Science and Data Science student at the Universit
 - Projects
 - Skills
 - Contact information
+
+## Built With
+
+HTML, CSS, and JavaScript, with help from Claude.
