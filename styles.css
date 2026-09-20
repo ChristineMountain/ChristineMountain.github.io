@@ -465,10 +465,6 @@ a { color: inherit; text-decoration: none; }
 .pill:nth-child(3n) { border-color: var(--lavender); }
 
 /* Project cards */
-.project-card {
-  overflow: hidden;
-}
-
 .project-photo {
   margin: -30px -30px 18px;
   border-radius: 26px 10px 0 0;
