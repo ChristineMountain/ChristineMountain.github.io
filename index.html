@@ -116,7 +116,7 @@
           <p class="edu-meta">Aug 2025 – May 2028 &middot; GPA 4.0</p>
           <ul class="edu-honors">
             <li>W.A. Franke Honors College</li>
-            <li>ASA DataFest — Best Insights Winner</li>
+            <li>ASA DataFest: Best Insights Winner</li>
             <li>JTED MME Scholarship</li>
           </ul>
         </div>
@@ -129,14 +129,19 @@
       <p class="handwritten kicker">what I've been up to</p>
       <h2><span class="doodle-inline"><svg><use href="#doodle-sparkle"/></svg></span> Experience</h2>
 
-      <div class="note-card spotlight-card">
-        <span class="tape tape-sage"></span>
-        <p class="card-tag">NASA Space Grant &middot; Kitt Peak National Observatory</p>
-        <h3>High-Speed Astronomical CMOS Imaging</h3>
-        <p>I help build and improve the data-processing and storage pipeline for a high-speed CMOS camera used in astronomical research at Kitt Peak National Observatory &mdash; a system that generates roughly <strong>20 TB of data per 10-day observing run</strong>. My work focuses on making that pipeline more efficient with Python-based tools for image analysis, so the data is easier to process, move, and store while supporting real telescope observations.</p>
-      </div>
-
       <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-date">Aug 2026 – Present</div>
+          <div class="timeline-content">
+            <h3>Undergraduate Researcher</h3>
+            <p class="timeline-org">NASA Space Grant &middot; Tucson, AZ</p>
+            <ul>
+              <li>Lead technical efforts to improve data-processing and storage workflows for a high-speed CMOS astronomical imager generating ~20 TB per 10-day observing run.</li>
+              <li>Develop Python-based tools for image analysis and data processing while supporting observations at Kitt Peak National Observatory, as part of the <a href="https://egami-group.github.io/index" target="_blank" rel="noopener">EGAMI research group</a>.</li>
+            </ul>
+          </div>
+        </div>
 
         <div class="timeline-item">
           <div class="timeline-date">Aug 2025 – Present</div>
@@ -144,7 +149,7 @@
             <h3>Full-Stack Software Developer</h3>
             <p class="timeline-org">UA Eller College of Management &middot; Tucson, AZ</p>
             <ul>
-              <li>Maintain and improve eSMS, a multi-project advising and career-services platform with role-based Student, Admin, Employer, Events, Admissions, Mobile API, and background-job applications.</li>
+              <li>Maintain and improve <a href="https://student.esms.arizona.edu/" target="_blank" rel="noopener">eSMS</a>, a multi-project advising and career-services platform with role-based Student, Admin, Employer, Events, Admissions, Mobile API, and background-job applications.</li>
               <li>Develop across a hybrid ASP.NET MVC/Core codebase using C#, JavaScript, HTML, SQL Server, and Entity Framework, supporting legacy .NET Framework systems and migration to modern .NET.</li>
               <li>Debug production issues involving live data and active users; implement user-facing and administrative features through layered controller, service, repository, model, and ViewModel architecture.</li>
             </ul>
@@ -200,7 +205,7 @@
           <div class="project-photo">
             <img src="images/datafest-team.png" alt="Team 2 (Machine Learning Learning Machines) presenting their DataFest project at whiteboards">
           </div>
-          <p class="project-ribbon">🏆 Best Insights — ASA DataFest 2026</p>
+          <p class="project-ribbon">🏆 Best Insights, ASA DataFest 2026</p>
           <h3>ASA DataFest ASU/University of Arizona</h3>
           <div class="pill-list">
             <span class="pill">Python</span>
@@ -211,6 +216,7 @@
             <span class="pill">Visualization</span>
           </div>
           <p class="card-desc">Under a 48-hour deadline, our team (Machine Learning Learning Machines) analyzed a multi-million-row healthcare dataset to find where access to care breaks down. We modeled how patient visits fall off with distance from the hospital (about a 2% drop per mile within ~21 miles) to help pinpoint where new clinics would have the biggest impact, and found that patients with chronic conditions who used the MyChart portal averaged roughly 12 more visits over four years. Presenting those findings to industry professionals and statisticians earned us Best Insights among competing teams.</p>
+          <a class="project-link" href="datafest-presentation.pdf" target="_blank" rel="noopener">View the presentation &rarr;</a>
         </div>
 
         <div class="note-card card project-card">
@@ -226,11 +232,12 @@
             <span class="pill">Neuroevolution</span>
             <span class="pill">Simulation</span>
           </div>
-          <p class="card-desc">With Brendan Phoebe, I built a neural network that learns where to shoot next on a 10&times;10 Battleship board, trained through neuroevolution instead of traditional backpropagation: each generation of candidate networks played many simulated games, and the strongest performers passed their weights (with small mutations) on to the next generation. Each board cell was scored using 20 engineered features &mdash; hit/miss history, remaining ship-length probabilities, board position, and more. Across 30 generations of training, the resulting network averaged <strong>45.5 moves per win</strong>, far better than random play (97) or hit-chasing (67), and close to the theoretical probabilistic-search optimum (42) &mdash; while running orders of magnitude faster. I presented this research at SUnMaRC as the University of Arizona's only female student presenter.</p>
+          <p class="card-desc">I built a neural network that learns where to shoot next on a 10&times;10 Battleship board, trained through neuroevolution instead of traditional backpropagation: each generation of candidate networks played many simulated games, and the strongest performers passed their weights (with small mutations) on to the next generation. Each board cell was scored using 20 engineered features, including hit/miss history, remaining ship-length probabilities, and board position. Across 30 generations of training, the resulting network averaged <strong>45.5 moves per win</strong>, far better than random play (97) or hit-chasing (67), and close to the theoretical probabilistic-search optimum (42), while running orders of magnitude faster. I presented this research at SUnMaRC as the University of Arizona's only female student presenter.</p>
           <div class="project-visual-slot">
             <p class="handwritten">more visuals coming soon</p>
             <p class="visual-slot-caption">(training charts &amp; game replays)</p>
           </div>
+          <a class="project-link" href="battleship-presentation.pdf" target="_blank" rel="noopener">View the presentation &rarr;</a>
         </div>
 
       </div>
@@ -257,6 +264,11 @@
           <h3>Community STEM &amp; CS Outreach</h3>
           <p class="card-badge">Tucson, AZ</p>
           <p>Advocated to school administration for a computer science program at Tanque Verde High School, helping expand student access to programming education. Helped establish a Robotics Club, taught chemistry at science events, co-created a women-in-STEM event, and volunteered in literacy and food-bank service.</p>
+          <div class="outreach-photos">
+            <img src="images/outreach-robotics.png" alt="Christine with the Robotics Club team">
+            <img src="images/outreach-literacy.png" alt="Christine reading with a child as part of literacy volunteering">
+            <img src="images/outreach-foodbank.png" alt="Christine volunteering at a food bank">
+          </div>
         </div>
 
       </div>
