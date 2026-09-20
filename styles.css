@@ -508,9 +508,9 @@ a { color: inherit; text-decoration: none; }
 }
 
 .outreach-photos img {
-  width: 110px;
-  height: 110px;
-  flex: 0 0 auto;
+  flex: 1 1 0;
+  width: 0;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 14px 4px 14px 4px;
   border: 4px solid var(--paper);
